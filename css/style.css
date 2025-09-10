@@ -58,6 +58,36 @@ a {
     color: var(--main-bg-color)
 }
 
+
+/****** Header *********/
+nav {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+
+.menu-hebergement:hover {
+    color:#0065FC;
+    border-top: solid #0065FC;
+}
+
+.menu-activites:hover {
+    color:#0065FC;
+    border-top: solid #0065FC;
+}
+
+.rechercher {
+    display:flex;
+    gap:10px; 
+    justify-content: space-between;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -122,7 +152,10 @@ a {
 }
 
 
+footer {
+    background-color: #F2F2F2;
 
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 

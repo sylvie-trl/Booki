@@ -16,11 +16,57 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        <nav>
+            <img class=logo src="images/logo/Booki.png" alt="logo booki">
+            <ul id="menu">
+                <li class="menu-hebergement"><a href="#hebergements">Hébergements</a></li>
+                <li class="menu-activites"><a href="#activites">Activités</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>   
+            <p>En plein centre-ville ou en pleine nature</p>
+            <ul class="rechercher">
+                <li><i class="fas fa-location-dot"></i></li>
+                <li>
+                    <form action="" method="">
+                        <label for="rechercher"></label>
+                        <input type="text" name="rechercher" id="rechercher">
+                    </form>
+                </li>
+                <li>
+                    <input type="submit" value="Rechercher">
+                </li>
+            </ul>
+            <ul class="filtres">
+                <li class="filtre-title">Filtres</li>
+                <li>
+                    <i class="fas fa-money-bill" aria-hidden="true"></i>
+                    <a href="#">Economique</a>
+                </li>
+                <li>
+                    <i class="fas fa-person" aria-hidden="true"></i>
+                    <a href="#">Familial</a>
+                </li>
+                <li>
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    <a href="#">Romantique</a>
+                </li>
+                <li>
+                    <i class="fas fa-fire" aria-hidden="true"></i>
+                    <a href="#">Nos pépites</a>
+                </li>
+            </ul>
+            <div class="info-hebergements">
+                <i class="fa-solid fa-info" aria-hidden="true"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </header>
+
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -52,7 +98,7 @@
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <h3 class="card-title">Chambres d'hôtes Au cœur de l'eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -88,8 +134,14 @@
                     </div>
                 </section>
             </div>
+            <section class="activites">
+                <h2 id="activites">Activités à Marseille</h2>
+
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <h2>A propos</h2>
+        </footer>
     </div>
 </body>
 
