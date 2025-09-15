@@ -182,10 +182,6 @@ nav {
     justify-content: center;
 }
 
-.info-hebergements p {
-
-}
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -202,6 +198,12 @@ nav {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards img {
+    width: 20;
+    height: 200px;
+    object-fit: contain;
 }
 
 /****** Populaires ***********/
@@ -249,7 +251,7 @@ nav {
     margin-bottom: 5px;
 }
 
-
+/****** Footer *************/
 footer {
     background-color: #F2F2F2;
 
