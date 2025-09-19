@@ -275,8 +275,11 @@ nav {
     margin-bottom: 5px;
 }
 
-
 /****** Activities ***********/
+
+.activites  {
+    margin-top: 50px;
+}
 
 .activites-cards {
     display: flex;
