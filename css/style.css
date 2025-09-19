@@ -64,6 +64,10 @@ h1 {
     margin-bottom: 0;
 }
 
+li {
+    list-style: none;
+}
+
 
 /****** Header *********/
 
@@ -86,7 +90,6 @@ nav {
 #menu {
     display: flex;
     gap: 16px;
-    list-style: none;
 }
 
 .menu-hebergement:hover {
@@ -156,7 +159,6 @@ nav {
 }
 
 .filtres .icones-filtres {
-    list-style: none;
     border: #D9D9D9 solid 2px;
     border-radius: 25px;
     padding: 10px;
@@ -214,6 +216,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 33px;
+    height: 207px;
 }
 
 .hebergements-cards img {
@@ -228,14 +231,19 @@ nav {
     margin: 5px 0 5px 0;
 }
 
-.hebergements-cards h3 {
-    font-size: 18px;
+.hebergements-cards .card-title {
+    font-size: 16px;
     margin: 10px 0 5px 0;
 }
 
-.hebergements a {
-    font-weight: bold;
-    font-size: 18px;
+.hebergements-cards .card-subtitle {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    font-weight: lighter;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -292,6 +300,7 @@ nav {
 
 .activites-cards .card {
     width: 35%;
+    height: 439px;
     padding: 0;
     margin: 15px;
 }
@@ -304,7 +313,7 @@ nav {
 }
 
 .activites-cards .card-title {
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 .activites-cards .card-content {
@@ -319,7 +328,6 @@ footer {
 }
 
 .footer-list {
-    list-style: none;
     padding: 0;
 }
 
@@ -333,23 +341,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .filtres {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .filtres p {
-        margin-bottom: 0;
-    }
-
-    .liste-filtres {
-        display: flex;
-        gap: 10px;
-        width: 100%;
-        overflow-x: auto;
-        margin-top: 0;
-    }
-    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -384,18 +375,5 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
-    main {
-      
-    }
-
-    header {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    nav {
-        flex-direction: column;
-        justify-content: center;
-    }
+    /* ... */
 }
