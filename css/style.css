@@ -368,6 +368,17 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     margin-top: 30px;
+    margin-left: 15px;
+    gap: 30px;
+}
+
+.categorie-list {
+    flex: 1;            /*chaque bloc prend une part égale de l'espace disponible*/
+    padding-left: 15px;
+}
+
+.categorie-list .title {
+    margin-bottom: 15px;
 }
 
 .footer-list {
@@ -375,12 +386,11 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 15px;
+    margin: 0 0 20px 0;
 }
 
-.categorie-list {
-    flex: 1;            /*chaque bloc prend une part égale de l'espace disponible*/
-    padding-left: 20px;
+.footer-list li {
+    margin-bottom: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
