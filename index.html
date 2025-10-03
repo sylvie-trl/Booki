@@ -17,17 +17,15 @@
 <body>
     <div class="main-container">
         <header>
-            <nav>
-                <img class=logo src="images/logo/Booki.png" alt="logo booki">
-                <ul id="menu" class="menu">
-                    <li class="menu-hebergement"><a href="#hebergements">Hébergements</a></li>
-                    <li class="menu-activites"><a href="#activites">Activités</a></li>
-                </ul>
+            <img class="logo" src="images/logo/Booki.png" alt="logo booki">
+            <nav id="menu">
+                <a href="#hebergements" class="menu menu-hebergement">Hébergements</a>
+                <a href="#activites" class="menu menu-activites">Activités</a>
             </nav>
         </header>
         <main>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>   
-            <p>En plein centre-ville ou en pleine nature</p>
+            <h1 class="title-page">Trouvez votre hébergement pour des vacances de rêve</h1>   
+            <p class="subtitle-page">En plein centre-ville ou en pleine nature</p>
             <div class="rechercher">
                 <div class="icone-rechercher"><i class="fas fa-location-dot"></i></div>
                 <form class="barre-rechercher">
@@ -71,8 +69,8 @@
                 <section class="hebergements">
                     <h2 id="hebergements" class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
-                        <a href="#">
-                            <article id="HotelDuPort" class="card">
+                        <a href="#" class="card">
+                            <article id="HotelDuPort">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -90,9 +88,8 @@
                                 </div>
                             </article>
                         </a>
-
-                        <a href="#">
-                            <article id="hotelChezAmina" class="card">
+                        <a href="#" class="card">
+                            <article id="hotelChezAmina">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -110,9 +107,8 @@
                                 </div>
                             </article>
                         </a>
-
-                        <a href="#">
-                            <article id="HotelLesMouettes" class="card">
+                        <a href="#" class="card">
+                            <article id="HotelLesMouettes">
                                 <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -130,9 +126,8 @@
                                 </div>
                             </article>
                         </a>
-
-                        <a href="#">
-                            <article id="HotelDeLaMer" class="card">
+                        <a href="#" class="card">
+                            <article id="HotelDeLaMer">
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -150,9 +145,8 @@
                                 </div>
                             </article>
                         </a>
-
-                        <a href="#">
-                            <article id="AubergeLaCanebiere" class="card">
+                        <a href="#" class="card">
+                            <article id="AubergeLaCanebiere">
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -170,9 +164,8 @@
                                 </div>
                             </article>
                         </a>
-
-                        <a href="#">
-                            <article id="AubergeLePanier" class="card">
+                        <a href="#" class="card">
+                            <article id="AubergeLePanier">
                                 <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -190,8 +183,8 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="show-more" >Afficher plus</a>
                     </div>
+                    <a href="#" class="show-more" >Afficher plus</a>
                 </section>
 
                 <section class="populaires">
@@ -301,32 +294,49 @@
 
         <footer>
             <div class="categorie-list">
-                <h4 class="title">A propos</h4>
+                <a href="#">
+                    <h4 class="title">A propos</h4>
+                </a>
                 <ul class="footer-list">
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales</li>
-                    <li>Données et confidentialité</li>
+                        <li>
+                            <a href="#">Fonctionnement du site</a>
+                        </li>
+                        <li>
+                            <a href="#">Conditions générales</a>
+                        </li>
+                        <li>
+                            <a href="#">Données et confidentialité</a>
+                        </li>
                 </ul>
             </div>
 
             <div class="categorie-list">
-                <h4 class="title">Nos hébergements</h4>
+                <a href="#">
+                    <h4 class="title">Nos hébergements</h4>
+                </a>
                 <ul class="footer-list">
-                    <li>Charte qualité</li>
-                    <li>Proposer votre hôtel</li>
+                        <li>
+                            <a href="#">Charte qualité</a>
+                        </li>
+                        <li>
+                            <a href="#">Proposer votre hôtel</a>
+                        </li>
                 </ul>
             </div>
-            
             <div class="categorie-list">
-                <h4 class="title">Assistance</h4>
+                <a href="#">
+                    <h4 class="title">Assistance</h4>
+                </a>
                 <ul class="footer-list">
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                        <li>
+                            <a href="#">Centre d'aide</a>
+                        </li>
+                        <li>
+                            <a href="#">Nous contacter</a>
+                        </li>
                 </ul>
             </div>
-            
         </footer>
     </div>
 </body>
-
 </html>
