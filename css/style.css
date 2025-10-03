@@ -71,17 +71,9 @@ li {
 
 
 /****** Header *********/
-
-
-h1 + p {
-    margin-top: 8px;
-    margin-bottom: 30px;
-}
-
-nav {
-    display:flex ;
+header {
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .logo {
@@ -89,10 +81,10 @@ nav {
     height: 19px;
     padding: 30px 50px 50px 10px;
 }
-    
-#menu {
-    display: flex;
-    align-items: flex-end;
+
+nav {
+    display:flex ;
+    justify-content: flex-end;
     gap: 68px;
     margin-top: 0;
 }
@@ -109,6 +101,13 @@ nav {
 .menu-activites:hover {
     color:#0065FC;
     border-top: solid #0065FC;
+}
+
+/******* Main Content ***********/
+
+h1 + p {
+    margin-top: 8px;
+    margin-bottom: 30px;
 }
 
 /******* Search Bar And Filters ***********/
