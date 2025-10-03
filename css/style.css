@@ -85,14 +85,20 @@ nav {
 }
 
 .logo {
-    width: 100px;
-    height: auto;
-    padding: 30px 0 30px 0;
+    width: 61px;
+    height: 19px;
+    padding: 30px 50px 50px 10px;
 }
     
 #menu {
     display: flex;
-    gap: 16px;
+    align-items: flex-end;
+    gap: 68px;
+    margin-top: 0;
+}
+
+.menu-hebergement, .menu-activites {
+    padding-top: 12px;
 }
 
 .menu-hebergement:hover {
@@ -115,7 +121,8 @@ nav {
 
 .icone-rechercher {
     background-color: var(--main-bg-color);
-    padding : 12px;
+    width: 50px;
+    height: 50px;
     border: var(--main-bg-color) solid 1px;
     border-radius: 15px 0 0 15px;
     display: flex;
@@ -127,9 +134,16 @@ nav {
     display: flex;
 }
 
+ #rechercher::placeholder {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+ }
+
 .rechercher input[type="text"] {
     border: solid var(--main-bg-color) 1px;
-    padding: 12px;
+    padding: 12px 24px 12px 24px;
     outline: none;
     border-left: none;
 }
@@ -152,7 +166,7 @@ nav {
 
 .filtres {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -167,11 +181,10 @@ nav {
 .liste-filtres {
     display: flex;
     gap: 15px;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.filtres .icones-filtres {
+.filtres .bouton-filtres {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,12 +198,8 @@ nav {
     height: 30px;
 }
 
-.filtres .icones-filtres:hover{
+.filtres .bouton-filtres:hover {
     background-color: #DEEBFF;
-}
-
-.icones-filtres i {
-    color: #0065FC;
 }
 
 .info-hebergements {
@@ -200,16 +209,21 @@ nav {
     margin-bottom: 20px;
 }
 
-.info-hebergements i {
-    border: #D9D9D9 solid 1px;
-    border-radius: 50px;
-    padding: 10px;
-    width: 2px;
-    height: 2px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.info-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d3d3d3; /* cercle fin et gris clair */
+  border-radius: 50%;
 }
+
+.info-symbol {
+  color: #0065FC; 
+  font-size: 14px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -222,7 +236,6 @@ nav {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    gap: 40px;
 }
 
 /****** Hebergements ***********/
@@ -231,16 +244,42 @@ nav {
 }    
 
 .hebergements-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-  margin-top: 30px;
+  display: flex;
+  margin-top: 33px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 30px, 
 }
 
-.hebergements .hebergements-cards .card img {
+.hebergements-cards .card {
+    margin-bottom: 30px;
+    width: 250px;
+    height: 192px;
+    padding-bottom: 15px;
+}
+
+.hebergements-cards img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0 0;   
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 15px 15px;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.hebergements-cards .card-subtitle {
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .show-more {
@@ -250,7 +289,6 @@ nav {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    padding: 30px 0 30px 0;
 }
 
 .populaires-title {
@@ -352,12 +390,14 @@ footer {
 @media (max-width: 1024px) {
      .filtres {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .icones-filtres {
-        white-space: nowrap;
+    .liste-filtres {
+        gap: 12px;
     }
-    
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -449,7 +489,7 @@ footer {
         gap: 10px;
     }   
 
-    .icones-filtres {
+    .bouton-filtres {
         height: 30px;
         justify-content: center;
         align-items: center;
