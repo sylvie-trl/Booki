@@ -478,9 +478,8 @@ footer {
     }
 
     .menu-hebergement, .menu-activites {
-        padding-bottom: 15px;
-        padding-right: 40px;
-        padding-left: 40px;
+        flex: 1;
+        text-align: center;
     }
 
     .menu-hebergement:hover ,.menu-activites:hover {
