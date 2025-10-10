@@ -199,6 +199,10 @@ h1 + p {
 
 .filter-button i {
     color: var(--main-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filters .filter-button:hover {
@@ -510,6 +514,10 @@ footer {
         display: inline;
     }
 
+    .search-button {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
     .search-text {
         display: none;
     }
@@ -519,17 +527,24 @@ footer {
     }
 
     .filters-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
     }   
 
-    .filter-button {
-        height: 30px;
-        justify-content: center;
-        align-items: flex-start;
+    .filters .filter-button {
+        height: 42px;
+        flex: 0 1 calc(50% - 10px);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         white-space: nowrap;
+        padding: 25px 19px;
+        box-sizing: border-box;
     }
+
+    
 
     .accommodations-info {
         margin-bottom: 0;
